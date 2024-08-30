@@ -60,3 +60,7 @@ The IR remote consists of a web interface that replicates the layout of the orig
 <img src="./img/web_interface.jpg" alt="Implemented Remote Control" height="400">
 
 Each button is assigned with an ID, and the web interface uses this ID to trigger the ESP8266 to emit the corresponding IR signal.
+
+The IR remote also contains OTA support, after initial wired uploading, network uploading option will be seen in the `tool -> port section`.
+
+<img src="./img/OTA.jpg" alt="OTA" height="400">

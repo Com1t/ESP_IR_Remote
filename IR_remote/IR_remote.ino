@@ -1,3 +1,6 @@
+#define OTA_ENABLE true
+#include "BaseOTA.h"
+
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -54,6 +57,8 @@ void setup() {
   Serial.print("\nWiFi connected, IP addr: ");
   Serial.println(WiFi.localIP());
 
+  OTAinit();  // setup OTA handlers
+
   // Start web server
   server.on("/", []() {
     server.send(200, "text/html", kbro_html_page);
@@ -64,5 +69,6 @@ void setup() {
 }
 
 void loop() {
+  OTAloopHandler();
   server.handleClient();
 }
