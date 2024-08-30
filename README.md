@@ -1,8 +1,8 @@
-# Web IR Remote
+# ESP IR Remote
 
 ## Introduction
 
-The **Web IR Remote** project allows you to control a KBro TV box using a web interface hosted on an ESP8266 microcontroller (such as a NodeMCU). The KBro TV box has a 3.5mm IR extender jack that can be utilized to pass the simulated IR signals for remote control. This project leverages the ESP8266 to generate the required IR signals and send them through the IR extender jack, enabling remote control functionality through a web browser.
+The **ESP IR Remote** project allows you to control a KBro TV box using a web interface hosted on an ESP8266 microcontroller (such as a NodeMCU). The KBro TV box has a 3.5mm IR extender jack that can be utilized to pass the simulated IR signals for remote control. This project leverages the ESP8266 to generate the required IR signals and send them through the IR extender jack, enabling remote control functionality through a web browser.
 
 ## Features
 
