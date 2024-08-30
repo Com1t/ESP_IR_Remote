@@ -51,3 +51,12 @@ uint64_t data = 0x1B0F445818800F00;
 ```
 
 From this information, we know the protocol is **XMP**, and the data for this key is `0x1B0F445810000F00`.
+
+## IR Remote
+
+The IR remote consists of a web interface that replicates the layout of the original remote and an IR signal transmission core that emulates its functionality.
+
+<img src="./img/remote_control.jpg" alt="Original Remote Control" height="400">
+<img src="./img/web_interface.jpg" alt="Implemented Remote Control" height="400">
+
+Each button is assigned with an ID, and the web interface uses this ID to trigger the ESP8266 to emit the corresponding IR signal.
